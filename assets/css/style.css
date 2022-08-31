@@ -8,7 +8,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Montserrat", sans-serif;
-  color: #777;
+  color: #333;
 }
 
 a {
@@ -31,8 +31,12 @@ h6,
   font-weight: 500;
 }
 
-h1{
- font-family: Archive;
+h1 {
+  font-family: Archive;
+}
+
+.owl-carousel {
+  padding: 0;
 }
 
 /*--------------------------------------------------------------
@@ -56,7 +60,7 @@ section {
   font-weight: 300;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #555;
+  color: #333;
 }
 
 .section-title p {
@@ -129,7 +133,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #70b9b0;
+  background: #13c4a3;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -160,21 +164,19 @@ section {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  background: #2d6760;
+  background: rgba(0, 0, 0, 0);
 }
 
 #header.header-scrolled {
-  background: #1d443f;
+  background: #13c4a3;
   height: 60px;
 }
 
 #header .logo h1 {
-  font-size: 30px;
+  font-size: 24px;
   margin: 0;
   padding: 0;
   line-height: 0;
-  font-weight: 700;
-  letter-spacing: 1px;
 }
 
 #header .logo h1 a,
@@ -277,7 +279,7 @@ section {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover > a {
-  color: #70b9b0;
+  color: #13c4a3;
 }
 
 .navbar .dropdown:hover > ul {
@@ -371,7 +373,7 @@ section {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-  color: #70b9b0;
+  color: #13c4a3;
 }
 
 .navbar-mobile .getstarted,
@@ -406,7 +408,7 @@ section {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover > a {
-  color: #70b9b0;
+  color: #13c4a3;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -466,8 +468,8 @@ section {
 
 #hero .btn-get-started:hover {
   background: #fff;
-  color: #70b9b0;
-  border: 1px solid #70b9b0;
+  color: #13c4a3;
+  border: 1px solid #13c4a3;
 }
 
 @media (min-width: 1024px) {
@@ -489,7 +491,7 @@ section {
   }
 }
 
-.headerlogo{
+.headerlogo {
   width: 150px;
   padding-bottom: 2.5rem;
 }
@@ -514,7 +516,7 @@ section {
 .about ul i {
   font-size: 22px;
   padding-right: 4px;
-  color: #70b9b0;
+  color: #13c4a3;
   line-height: 0;
 }
 
@@ -523,41 +525,38 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services
+# Products
 --------------------------------------------------------------*/
-.services .icon-box {
+.products .icon-box {
   margin-bottom: 20px;
   text-align: center;
 }
 
-.services .icon {
+.products .icon {
   display: flex;
   justify-content: center;
   margin-bottom: 15px;
 }
 
-.services .icon i {
-  color: #70b9b0;
+.products .icon img {
+  color: #13c4a3;
+  max-height: 60px;
+}
+
+.products .icon i {
+  color: #13c4a3;
   font-size: 42px;
 }
 
-.services .title {
+.products .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
   text-transform: uppercase;
+  color: #333;
 }
 
-.services .title a {
-  color: #343a40;
-  transition: 0.3s;
-}
-
-.services .icon-box:hover .title a {
-  color: #70b9b0;
-}
-
-.services .description {
+.products .description {
   line-height: 24px;
   font-size: 14px;
 }
@@ -567,7 +566,7 @@ section {
 --------------------------------------------------------------*/
 .call-to-action {
   background: linear-gradient(rgba(1, 41, 42, 0.5), rgba(7, 56, 57, 0.5)),
-    url("../img/call-to-action-bg.jpg") fixed center center;
+    url("../img/cta.webp") fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
@@ -597,8 +596,12 @@ section {
 }
 
 .call-to-action .cta-btn:hover {
-  background: #70b9b0;
-  border: 2px solid #70b9b0;
+  background: #13c4a3;
+  border: 2px solid #13c4a3;
+}
+
+.call-to-action .yellow {
+  color: #fab718;
 }
 
 /*--------------------------------------------------------------
@@ -632,7 +635,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  background: #70b9b0;
+  background: #13c4a3;
   color: #fff;
 }
 
@@ -680,7 +683,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-info a i:hover {
-  color: #70b9b0;
+  color: #13c4a3;
 }
 
 .portfolio .portfolio-wrap:hover img {
@@ -717,14 +720,14 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #70b9b0;
+  border: 1px solid #13c4a3;
 }
 
 .portfolio-details
   .portfolio-details-slider
   .swiper-pagination
   .swiper-pagination-bullet-active {
-  background-color: #70b9b0;
+  background-color: #13c4a3;
 }
 
 .portfolio-details .portfolio-info {
@@ -812,11 +815,11 @@ section {
 }
 
 .faq .faq-list .collapsed {
-  color: #343a40;
+  color: #333;
 }
 
 .faq .faq-list .collapsed:hover {
-  color: #70b9b0;
+  color: #13c4a3;
 }
 
 .faq .faq-list .collapsed .icon-show {
@@ -892,7 +895,8 @@ section {
   line-height: 1;
   font-weight: 500;
   letter-spacing: 1px;
-  color: #70b9b0;
+  color: #13c4a3;
+  font-family: Archive;
 }
 
 .contact .contact-about p {
@@ -912,18 +916,18 @@ section {
   justify-content: center;
   font-size: 16px;
   background: #fff;
-  color: #70b9b0;
+  color: #13c4a3;
   line-height: 0;
   margin-right: 4px;
   border-radius: 50%;
   width: 36px;
   height: 36px;
   transition: 0.3s;
-  border: 1px solid #70b9b0;
+  border: 1px solid #13c4a3;
 }
 
 .contact .social-links a:hover {
-  background: #70b9b0;
+  background: #13c4a3;
   color: #fff;
 }
 
@@ -933,7 +937,7 @@ section {
 
 .contact .info i {
   font-size: 32px;
-  color: #70b9b0;
+  color: #13c4a3;
   float: left;
   line-height: 1;
 }
@@ -994,7 +998,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #70b9b0;
+  background: #13c4a3;
   border: 0;
   padding: 10px 24px;
   color: #fff;
