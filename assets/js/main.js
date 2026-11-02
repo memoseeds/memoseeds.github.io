@@ -248,4 +248,15 @@
       },
     },
   });
+
+  /**
+   * Project Notice Modal (Shown on every visit)
+   */
+  window.addEventListener('load', () => {
+    const noticeModalEl = document.getElementById('projectNoticeModal');
+    if (noticeModalEl && typeof bootstrap !== 'undefined') {
+      const noticeModal = new bootstrap.Modal(noticeModalEl);
+      noticeModal.show();
+    }
+  });
 })();

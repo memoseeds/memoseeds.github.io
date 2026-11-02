@@ -663,24 +663,18 @@
 
                 <div>
                   <i class="bi bi-telephone"></i>
-                  <p>+94 70 106 2626</p>
+                  <p>077-XXX-XXXX</p>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-5 col-md-12">
               <form
-                action="https://formsubmit.co/memoseedslk@gmail.com"
+                action="javascript:void(0);"
                 method="POST"
                 role="form"
                 class="php-email-form"
               >
-                <input
-                  type="hidden"
-                  name="_subject"
-                  value="Memoseeds Site Message"
-                />
-                <input type="hidden" name="_captcha" value="false" />
                 <div class="form-group">
                   <input
                     type="text"
@@ -688,7 +682,7 @@
                     class="form-control"
                     id="name"
                     placeholder="Your Name"
-                    required
+                    disabled
                   />
                 </div>
                 <div class="form-group mt-3">
@@ -698,7 +692,7 @@
                     name="email"
                     id="email"
                     placeholder="Your Email"
-                    required
+                    disabled
                   />
                 </div>
                 <div class="form-group mt-3">
@@ -708,7 +702,7 @@
                     name="phone"
                     id="phone"
                     placeholder="Phone Number"
-                    required
+                    disabled
                   />
                 </div>
                 <div class="form-group mt-3">
@@ -718,7 +712,7 @@
                     name="subject"
                     id="subject"
                     placeholder="Subject"
-                    required
+                    disabled
                   />
                 </div>
                 <div class="form-group mt-3">
@@ -727,16 +721,11 @@
                     name="message"
                     rows="5"
                     placeholder="Message"
-                    required
+                    disabled
                   ></textarea>
                 </div>
-                <input
-                  type="hidden"
-                  name="_next"
-                  value="https://memoseeds.github.io/formsubmit.html"
-                />
                 <div class="text-center mt-3">
-                  <button type="submit">Send Message</button>
+                  <button type="button" disabled>Submissions Closed</button>
                 </div>
               </form>
             </div>
@@ -757,6 +746,43 @@
       <!-- End Map Section -->
     </main>
     <!-- End #main -->
+
+    <!-- ======= Project Notice Modal ======= -->
+    <div
+      class="modal fade"
+      id="projectNoticeModal"
+      tabindex="-1"
+      aria-labelledby="projectNoticeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content notice-modal-content">
+          <div class="modal-header border-0 pb-0">
+            <h4 class="modal-title notice-modal-title" id="projectNoticeModalLabel">
+              A Planted Memory 🌱
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body notice-modal-body pt-3">
+            <p>
+              Thank you for your interest in Memoseeds! This website represents a
+              concept created for a university project focusing on sustainability
+              and mental wellness.
+            </p>
+            <p class="mb-0">
+              As this was an academic showcase, operations have concluded and we
+              are no longer taking orders or commercial inquiries.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Project Notice Modal -->
 
     <!-- ======= Footer ======= -->
     <footer id="footer">

@@ -997,6 +997,54 @@ section {
   font-size: 14px;
 }
 
+.contact .php-email-form input:disabled,
+.contact .php-email-form textarea:disabled {
+  background-color: #e9ecef;
+  color: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.85;
+}
+
+.contact .php-email-form button:disabled {
+  background: #a3ccc6;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+/*--------------------------------------------------------------
+# Project Notice Modal
+--------------------------------------------------------------*/
+.notice-modal-content {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.18);
+  border-top: 5px solid #13c4a3;
+  padding: 12px 8px 16px 8px;
+}
+
+.notice-modal-title {
+  color: #13c4a3;
+  font-weight: 700;
+  font-size: 1.35rem;
+}
+
+.notice-modal-body {
+  color: #4a5553;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.notice-modal-content .btn-close {
+  padding: 0.8rem;
+}
+
+.notice-modal-content .btn-close:focus {
+  box-shadow: none;
+}
+
 .contact .php-email-form button[type="submit"] {
   background: #13c4a3;
   border: 0;
